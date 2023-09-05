@@ -111,43 +111,43 @@ let products = [
     id: 10,
     name: 'Kil Kupa',
     image: 'cup1.png',
-    price: 23
+    price: 7
   },
   {
     id: 11,
     name: 'Kil Kupa',
     image: 'cup2.png',
-    price: 23
+    price: 9
   },
   {
     id: 12,
     name: 'Kil Kupa',
     image: 'cup3.png',
-    price: 23
+    price: 7
   },
   {
     id: 13,
     name: 'Kil Kupa',
     image: 'cup4.png',
-    price: 23
+    price: 8
   },
   {
     id: 14,
     name: 'Çelik Süzgeç',
     image: 'sieve.png',
-    price: 23
+    price: 5
   },
   {
     id: 15,
-    name: 'Çelik Süzge.',
+    name: 'Çelik Süzgeç',
     image: 'sieve2.png',
-    price: 23
+    price: 5
   },
   {
     id: 16,
     name: 'Hediye Sepeti',
     image: 'sepet.png',
-    price: 23
+    price: 35
   }
 ];
 
