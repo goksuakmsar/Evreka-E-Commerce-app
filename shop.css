@@ -186,7 +186,7 @@ main .shopping span {
   position: fixed;
   top: 0;
   left: 100%;
-  width: 500px;
+  width: 35%;
   height: 100vh;
   transition: 0.5s;
   background-color: #efdef4;
@@ -194,13 +194,13 @@ main .shopping span {
 }
 
 .active .cards {
-  left: calc(100% - 500px);
+  left: calc(100% - 35%);
 }
 
 
 .cards h1 {
   margin: 0;
-  padding: 0 20px;
+  padding: 0 10%;
   height: 80px;
   display: flex;
   align-items: center;
@@ -215,7 +215,7 @@ main .shopping span {
   bottom: 0;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
 }
 
@@ -234,7 +234,23 @@ main .shopping span {
   background-color: #f0f0f0e6;
 }
 
-.cards .checkOut div:nth-child(2) {
+.cards .checkOut button {
+  width: 100%;
+  background-color: #e8bdf4e6;
+  border: none;
+}
+
+.cards .checkOut a {
+  text-decoration: none;
+  color: #4b4b4a;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+
+.cards .checkOut div:last-child {
+  width: 100%;
   background-color: #4b4b4a;
   color: #fbf7f4e6;
   font-size: 15px;
@@ -243,8 +259,10 @@ main .shopping span {
 }
 
 .listCard li {
-  display: grid;
-  grid-template-columns: 100px repeat(3, 1fr);
+  display: flex;
+  justify-content: space-around;
+  /* display: grid;
+  grid-template-columns: 100px repeat(3, 1fr); */
   row-gap: 10px;
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
@@ -253,13 +271,15 @@ main .shopping span {
 }
 
 .listCard li div {
+  width: 15%;
+  height: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .listCard li img {
-  width: 50px
+  width: 100%;
 }
 
 .listCard li button {
@@ -271,10 +291,6 @@ main .shopping span {
   margin: 0 10px;
 }
 
-.ode {
-  text-decoration: none;
-  color: #4b4b4a;
-}
 
 footer {
   padding: 90px 20px;
@@ -401,5 +417,23 @@ footer .col-3 p {
   input,
   footer button {
     display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    width: 55%;
+  }
+
+  .active .cards {
+    left: calc(100% - 55%);
+  }
+
+  .cards h1 {
+    font-size: 17px;
+  }
+
+  .listCard li {
+    font-size: 12px;
   }
 }
